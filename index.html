@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Asmita Singh - Software Engineer based in Prayagraj. Expertise in Java, JavaScript, Node.js, Express.js, MongoDB, MySQL, and React. Crafting beautiful and performant web experiences." />
+    <meta name="keywords"
+        content="Asmita Singh, Software Engineer, Software Developer, Full-Stack Developer, React Developer, Prayagraj, Portfolio" />
+    <meta name="author" content="Suma M Shavi" />
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Asmita Singh | Software Engineer" />
+    <meta property="og:description"
+        content="Explore the portfolio of Asmita Singh, a Software Engineer specializing in modern web technologies and scalable software solutions." />
+    <meta property="og:image" content="assets/profile.jpg" />
+    <meta property="og:url" content="https://Asmitasingh23.github.io/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Asmita Singh | Software Engineer" />
+    <meta name="twitter:description"
+        content="Explore the portfolio of Asmita Singh, a Software Engineer specializing in modern web technologies and scalable software solutions." />
+    <meta name="twitter:image" content="assets/profile.jpg" />
+
+    <title>Asmita Singh | Software Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Boxicons for icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- ============ BACKGROUND ANIMATION ============ -->
+    <div class="bg-animation">
+        <div class="blob blob-p1"></div>
+        <div class="blob blob-p2"></div>
+        <div class="blob blob-p3"></div>
+        <div class="bg-noise"></div>
+    </div>
+
+    <!-- ============ CURSOR FOLLOWER ============ -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ============ LOADER ============ -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-circle"></div>
+            <p class="loader-text">Loading...</p>
+        </div>
+    </div>
+<!-- ============ NAVIGATION (PREMIUM) ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <a href="#home" class="logo">
+      <span class="logo-icon">&lt;/&gt;</span>
+      <span class="logo-text">Asmita</span>
+    </a>
+
+    <!-- LINKS -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-nav="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-nav="about">About</a></li>
+      <li><a href="#education" class="nav-link" data-nav="education">Education</a></li>
+      <li><a href="#skills" class="nav-link" data-nav="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-nav="projects">Projects</a></li>
+      <li><a href="#experience" class="nav-link" data-nav="experience">Experience</a></li>
+      <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+    </ul>
+
+    <!-- ACTIONS -->
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle">
+        <i class="bx bx-moon" id="themeIcon"></i>
+      </button>
+
+      <a href="assets/asmita_resume.pdf" target="_blank" class="resume-btn">
+        <i class="bx bx-download"></i>
+        <span>Resume</span>
+      </a>
+
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for work
+                </div>
+
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Asmita Singh</span>
+                </h1>
+
+                <div class="hero-typewriter">
+                    <span>I build </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+
+                <p class="hero-description">
+                    Software Engineer focused on designing scalable systems and efficient
+                    backend architectures, with hands-on experience in React, Node.js, and APIs.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Let's Talk <i class="bx bx-chat"></i>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="7">0</span><span>+</span>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span><span>+</span>
+                        <p>Months Exp</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                </div>
+            </div>
+
+            <div class="hero-image" data-aos="fade-left">
+                <div class="hero-img-wrapper">
+                    <div class="img-ring"></div>
+                    <img src="assets/about.jpeg" alt="Profile Photo" class="profile-img" id="profileImg" />
+                    <div class="img-badge">
+                        <i class="bx bx-code-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">
+                <i class="bx bx-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-col" data-aos="fade-right">
+                    <div class="about-img-wrapper">
+                        <img src="assets/about.jpeg" alt="About Me" class="about-img" />
+                        <div class="about-experience-card">
+                            <span class="exp-number">5+</span>
+                            <span class="exp-label">Months of Experience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content-col" data-aos="fade-left">
+                    <h3>Passionate Software Engineer</h3>
+                    <p class="hero-description">
+                        Software Engineer building scalable systems and high-performance applications
+                        with a focus on clean architecture and efficient problem solving.
+                    </p>
+                    <p class="about-text">
+                        Strong foundation in data structures, algorithms, and database design.
+                        Experienced in developing RESTful APIs and delivering end-to-end solutions.
+                        Quick learner with proven ability to implement modern development practices
+                        and contribute to high-impact projects.
+                    </p>
+
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Asmita Singh</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Role:</span>
+                            <span class="info-value">Software Engineer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Education:</span>
+                            <span class="info-value">
+                                B.Tech in Computer Science, SIET Prayagraj
+                            </span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">singhasmita934@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Prayagraj, India</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Status:</span>
+                            <span class="info-value available">Available</span>
+                        </div>
+                    </div>
+
+                    <a href="assets/asmita_resume.pdf" download class="btn btn-primary">
+                        Download CV <i class="bx bx-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EDUCATION SECTION ============ -->
+    <section class="education section" id="education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Academic Background</span>
+                <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+            </div>
+
+            <div class="timeline-container">
+
+                <!-- Entry 1: Bachelor's Degree -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot edu-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-top">
+                            <div>
+                                <span class="timeline-date">2022 – 2026</span>
+                                <h3 class="timeline-title">Bachelor of Technology In Computer Science Engineering</h3>
+                                <p class="timeline-org">Shambhunath Institute of Engineering &amp; Technology</p>
+                                <p class="timeline-desc">
+                                    Prayagraj, Uttar Pradesh, India
+                                </p>
+                            </div>
+                            <span class="edu-badge">Final Year • CGPA: 7.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entry 2: Pre-University -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot edu-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-top">
+                            <div>
+                                <span class="timeline-date">2020 - 2022</span>
+                                <h3 class="timeline-title">Higher Secondary Education</h3>
+                                <p class="timeline-org">Vishnu Bhagwan Public School,Prayagraj</p>
+                                <p class="timeline-desc">
+                                    Prayagraj, Uttar Pradesh, India
+                                </p>
+                            </div>
+                            <span class="edu-badge edu-badge--blue">65%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot edu-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-top">
+                            <div>
+                                <span class="timeline-date">2018 - 2020</span>
+                                <h3 class="timeline-title">Secondary Education</h3>
+                                <p class="timeline-org">Vishnu Bhagwan Public School,Prayagraj</p>
+                                <p class="timeline-desc">
+                                    Prayagraj, Uttar Pradesh, India
+                                </p>
+                            </div>
+                            <span class="edu-badge edu-badge--blue">73.6%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MARKSHEET MODAL ============ -->
+    <div class="marksheet-overlay" id="marksheetOverlay" role="dialog" aria-modal="true"
+        aria-labelledby="marksheetTitle">
+        <div class="marksheet-modal">
+            <div class="marksheet-modal-header">
+                <p class="marksheet-modal-title" id="marksheetTitle"></p>
+                <div class="marksheet-controls">
+                    <button class="ms-ctrl" id="msZoomIn" title="Zoom in"><i class="bx bx-zoom-in"></i></button>
+                    <button class="ms-ctrl" id="msZoomOut" title="Zoom out"><i class="bx bx-zoom-out"></i></button>
+                    <button class="ms-ctrl" id="msClose" title="Close"><i class="bx bx-x"></i></button>
+                </div>
+            </div>
+            <div class="marksheet-img-wrap">
+                <img id="marksheetImg" src="" alt="Marksheet" />
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+            </div>
+
+            <!-- Skills content will be added -->
+            <div class="skills-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-tab="core">Core CS</button>
+                <button class="tab-btn" data-tab="frontend">Frontend</button>
+                <button class="tab-btn" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="tools">Tools & Others</button>
+            </div>
+
+            <div class="skills-content">
+                <div class="tab-panel active" id="core">
+                    <div class="skills-grid">
+                        <!-- Skill cards will be injected by JS -->
+                    </div>
+                </div>
+                <div class="tab-panel" id="frontend">
+                    <div class="skills-grid">
+                        <!-- Skill cards will be injected by JS -->
+                    </div>
+                </div>
+                <div class="tab-panel" id="backend">
+                    <div class="skills-grid">
+                        <!-- Skill cards will be injected by JS -->
+                    </div>
+                </div>
+                <div class="tab-panel" id="tools">
+                    <div class="skills-grid">
+                        <!-- Skill cards will be injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project cards will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EXPERIENCE SECTION ============ -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Work &amp; Training</span>
+                <h2 class="section-title">My <span class="gradient-text">Experience</span></h2>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Entry 1: Internship -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-top">
+                            <div>
+                                <span class="timeline-date">Nov 2025 – March 2026</span>
+                                <h3 class="timeline-title">Software Engineer Intern (Full Stack)</h3>
+                                <p class="timeline-org">Technohacks</p>
+                                <p class="timeline-desc">
+                                    <i class="bx bx-map"></i> Remote
+                                </p>
+                            </div>
+                        </div>
+                        <p class="timeline-desc">
+                            Built and enhanced scalable web applications using React and Node.js,
+                            developing efficient backend services and integrating RESTful APIs.
+                            Improved application performance and data handling through optimized MongoDB operations.
+                        </p>
+                        <a href="assets/certificates/Certificate.pdf" target="_blank" class="btn-certificate">
+                            <i class="bx bx-certification"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's build something amazing together</h3>
+                    <p>Feel free to reach out for collaborations, freelance work, or just a friendly hello!</p>
+
+                    <div class="contact-cards">
+                        <a href="mailto:sumashavi09@gmail.com" class="contact-card">
+                            <i class="bx bx-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <p>singhasmita934@gmail.com</p>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <i class="bx bx-map"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Prayagraj, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Asmitasingh23" target="_blank" class="social-link" aria-label="GitHub"><i
+                                class="bx bxl-github"></i></a>
+                        <a href="https://www.linkedin.com/in/asmita-singh-2932a6284/"
+                            target="_blank" class="social-link" aria-label="LinkedIn"><i
+                                class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="a639e1f1-33a9-4418-bd9b-5b22b6dbc6ca">
+
+    <!-- Optional: Email Subject -->
+    <input type="hidden" name="subject" value="New Message from Portfolio">
+
+    <!-- Optional: Redirect after submit -->
+    <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
+     <input type="hidden" name="redirect" value="">
+
+    <div class="form-row">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="your@email.com" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Subject</label>
+        <input type="text" name="title" placeholder="Project Inquiry" required>
+    </div>
+
+    <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-full">
+        <span>Send Message</span>
+        <i class="bx bx-send"></i>
+    </button>
+    <div class="form-status" id="formStatus"></div>
+
+</form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="logo">
+                    <span class="logo-bracket">&lt;</span>Asmita<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p>Crafted with ✨ by <strong>Asmita Singh</strong></p>
+                <p class="footer-copy">&copy; <span id="year"></span> All rights reserved.</p>
+            </div>
+        </div>
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="bx bx-up-arrow-alt"></i>
+        </a>
+    </footer>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script src="js/data.js"></script>
+     <script src="js/script.js"></script> 
+   
+</body>
+
+</html>
+
