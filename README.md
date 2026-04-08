@@ -10,7 +10,7 @@
 > A simple space where I showcase my work, skills, and journey  
 
 <p align="center">
-  <a href=" https://asmitasingh23.github.io/Asmitasingh23/">
+  <a href="https://asmitasingh23.github.io/Asmitasingh23/">
     <img src="https://img.shields.io/badge/🌐 Portfolio-Live-ff007f?style=for-the-badge&logo=google-chrome&logoColor=white"/>
   </a>
   <a href="mailto:singhasmita934@gmail.com">
