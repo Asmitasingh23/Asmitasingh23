@@ -59,8 +59,8 @@ const projectsData = [
     desc: "Designed and developed a responsive personal portfolio website. Implemented smooth scrolling and animations. Showcased skills, education, and projects. Focused on clean UI and performance optimization.",
     image: "assets/projects/project-1.png",
     tags: ["HTML", "CSS", "JavaScript", "React"],
-    liveUrl: "https://suma371.github.io/Personal-portfolio-Website/",
-    codeUrl: "https://github.com/suma371/Personal-portfolio-Website",
+    liveUrl: "https://asmitasingh23.github.io/Asmitasingh23/",
+    codeUrl: "https://github.com/Asmitasingh23/Asmitasingh23",
   },
   {
     title: "NexaAI",
