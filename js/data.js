@@ -59,7 +59,7 @@ const projectsData = [
     desc: "Designed and developed a responsive personal portfolio website. Implemented smooth scrolling and animations. Showcased skills, education, and projects. Focused on clean UI and performance optimization.",
     image: "assets/projects/project-1.png",
     tags: ["HTML", "CSS", "JavaScript", "React"],
-    liveUrl: "https://asmitasingh23.github.io/Asmitasingh23/",
+    liveUrl: "https://github.com/Asmitasingh23/Asmitasingh23/",
     codeUrl: "https://github.com/Asmitasingh23/Asmitasingh23",
   },
   {
